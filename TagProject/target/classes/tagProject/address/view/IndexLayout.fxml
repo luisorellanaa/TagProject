@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="Content" fx:id="mainIndexPane" maxHeight="-1.0" maxWidth="-1.0" minHeight="0.0" minWidth="0.0" prefHeight="597.0000999999975" prefWidth="878.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="tagProject.address.view.IndexControler">
+  <children>
+    <Button fx:id="crearIndexBtn" layoutX="530.0" layoutY="117.0" mnemonicParsing="false" text="Crear" />
+    <Label layoutX="198.0" layoutY="80.0" text="Ruta" />
+    <TextField fx:id="rutaTxt" disable="false" editable="false" layoutX="246.0" layoutY="77.0" maxHeight="26.0" maxWidth="387.0" minHeight="26.0" minWidth="387.0" prefColumnCount="300" prefHeight="26.0" prefWidth="387.0" />
+    <Label layoutX="143.0" layoutY="120.0" prefWidth="86.0" text="Identificador" />
+    <TextField fx:id="idIndexTxt" editable="true" layoutX="250.0" layoutY="118.0" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="218.0" />
+    <Label fx:id="indiceSeleccionadoLbl" alignment="CENTER" blendMode="SRC_OVER" cache="true" cacheHint="QUALITY" contentDisplay="CENTER" labelFor="$crearIndexBtn" layoutY="21.0" mnemonicParsing="false" mouseTransparent="false" prefWidth="665.9999000000025" rotate="0.0" text="" textAlignment="CENTER" textOverrun="ELLIPSIS" underline="false" AnchorPane.leftAnchor="124.0" AnchorPane.rightAnchor="88.0">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Label>
+    <BarChart fx:id="indexChart" alternativeColumnFillVisible="false" alternativeRowFillVisible="true" blendMode="SRC_OVER" disable="false" focusTraversable="true" horizontalGridLinesVisible="true" horizontalZeroLineVisible="true" legendSide="BOTTOM" legendVisible="false" prefHeight="364.0000999999975" prefWidth="775.0" title="Indices Almacenados" titleSide="TOP" verticalGridLinesVisible="true" verticalZeroLineVisible="true" visible="true" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="43.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="221.0">
+      <xAxis>
+        <CategoryAxis fx:id="indexAxis" animated="true" label="Indices" side="BOTTOM">
+          <tickLabelFont>
+            <Font size="12.5" />
+          </tickLabelFont>
+        </CategoryAxis>
+      </xAxis>
+      <yAxis>
+        <NumberAxis fx:id="numDocAxis" label="Cantidad Documentos" side="LEFT" />
+      </yAxis>
+      <effect>
+        <InnerShadow color="#606060" height="33.238853503184714" radius="7.8097133757961785" width="0.0" />
+      </effect>
+    </BarChart>
+    <Separator disable="false" focusTraversable="false" layoutY="59.0" prefWidth="777.0" AnchorPane.leftAnchor="57.0" AnchorPane.rightAnchor="44.0" />
+    <Separator blendMode="SRC_OVER" layoutY="197.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="777.0" visible="true" AnchorPane.leftAnchor="56.5" AnchorPane.rightAnchor="44.5" />
+  </children>
+  <effect>
+    <InnerShadow color="#808080" />
+  </effect>
+</AnchorPane>
